@@ -1,6 +1,6 @@
 # Learning port
 General topics
-- [Why Python]()
+- [Why Python](https://github.com/vigneshbharathi68/Study_Purspose/blob/main/WHYPYTHON.md)
 
 ### Python basics
 - [Python basics checklist](https://github.com/vigneshbharathi68/Study_Purspose/blob/main/PYTHONCHECKLIST.md)
