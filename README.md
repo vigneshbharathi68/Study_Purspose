@@ -3,7 +3,7 @@ General topics
 - [Why Python]()
 
 ### Python basics
-- [Python basics checklist]()
+- [Python basics checklist](https://github.com/vigneshbharathi68/Study_Purspose/blob/main/PYTHONCHECKLIST.md)
 - [Python basic Tutorial](https://www.youtube.com/watch?v=QXeEoD0pB3E&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)
 
 ### Python Django Tutorials
