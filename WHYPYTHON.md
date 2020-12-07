@@ -1,11 +1,10 @@
 ## Is Python Useful?
 - Python is easy to use, powerful, and versatile, making it a great choice for beginners and experts alike. Python’s readability makes it a great first programming language — it allows you to think like a programmer and not waste time with confusing syntax. For instance, look at the following code to print “hello world” in Java and Python.
 JAVA
-
     public class Main{
-        public static void main(String[] args) {
-            System.out.println("hello world");
-        }
+    public static void main(String[] args) {
+    System.out.println("hello world");
+    }
     }
 
 PYTHON 
