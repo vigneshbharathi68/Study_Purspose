@@ -1,4 +1,0 @@
-    outside of the body tag
-    <!-- <div id='container'>
-        <canvas id='downloads_chart' data-url="{% url 'downloads_chart' %}"></canvas>
-    </div> -->

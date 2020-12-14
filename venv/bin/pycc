@@ -1,0 +1,3 @@
+#!/home/chadura_tech/projects/vignesh_bharathi/venv/bin/python3
+from numba.pycc import main
+main()
