@@ -4,6 +4,9 @@ from .models import StateWiseTesting
 from django.shortcuts import HttpResponse 
 import json
 
+from django.views import View
+from .models import StateWiseTesting 
+
 
 # Create your views here.
 
@@ -40,8 +43,11 @@ def dashboard_home(request):
             data = sort_state(statef)
 
 
-
-
-
     
     return render(request, "download_home.html", {"df": data})
+
+
+class dataView(View):
+    template_name = 'data.html'
+    model = StateWiseTesting
+    
