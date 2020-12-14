@@ -14,15 +14,15 @@ General topics
 ### JavaScript and all related stuff
 
 - Theoriticall learning links
-    - [JS W3School](https://www.w3schools.com/js/default.asp)Theory
+    - [JS W3School](https://www.w3schools.com/js/default.asp)
     - [JQuery - W3School](https://www.w3schools.com/jquery/default.asp)
 
 - Youtube Videos
     - [JavaScript - Ram Source Tamil](https://www.youtube.com/playlist?list=PLFIUfkm8gifnKK4P0PjWGg7SOgYoRL958)
 
 ### JS Designs
-    - [Javascript designs bradtraversy](https://github.com/bradtraversy)
-    - [JQuery Plug-ins, tags](https://plugins.jquery.com/tag/input/)
+- [Javascript designs bradtraversy](https://github.com/bradtraversy)
+- [JQuery Plug-ins, tags](https://plugins.jquery.com/tag/input/)
 
 ### Tutorial links
 - [Code for Entrpreneurs-Django Tutorial](https://www.codingforentrepreneurs.com/projects)
