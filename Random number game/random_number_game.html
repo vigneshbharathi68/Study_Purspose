@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>  
+    <div class="wrapper">
+        <span class="box third-number"></span>
+        <span class="box second-number"></span>
+        <span class="box first-number"></span>
+    </div>
+
+    <div class="wrapper">
+
+        <div id="dice" class="box">0</div>
+
+        <div id="dice1" class="box">0</div>
+
+        <div id="dice2" class="box">0</div>
+
+    <br><br><br><br>
+    <center>
+        <button onclick="AniNum()">Start</button>
+        <button onclick="stopNum()">Stop</button>
+    </center>
+    <br>
+    <center>
+    <button onclick="reset()">Reset</button>
+    </center>
+
+    </div>
+
+<script>
+    function AniNum()
+    {
+    MyVar=setInterval(rolldice,10)
+    }
+
+    function rolldice()
+    {
+    var ranNum = Math.floor( 1 + Math.random() * 6 );
+    var ranNum2 = Math.floor( 1 + Math.random() * 6 );
+    var ranNum3 = Math.floor( 1 + Math.random() * 6 );
+
+    document.getElementById("dice").innerHTML = ranNum;
+    document.getElementById("dice1").innerHTML = ranNum2;
+    document.getElementById("dice2").innerHTML = ranNum3;
+    }
+    function stopNum()
+    {clearInterval(MyVar);}
+
+    function reset()
+    {location.reload();}
+</script>
+
+</body>
+</html>
