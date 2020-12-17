@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Learning port
 General topics
 - [Why Python](https://github.com/vigneshbharathi68/Study_Purspose/blob/main/WHYPYTHON.md)
