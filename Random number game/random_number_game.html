@@ -3,15 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>1
+
+
+<style>
+    body{
+        background: #262626;
+    }
+    .wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .wrapper div{
+        font-family: 'Trebuchet MS';
+        color: #fff;
+        border: 2px solid #ddd;
+        padding: 0 30px;
+        border-radius: 25px;
+        margin: 0 10px;
+    }
+    .box{
+        display: inline-block;
+        overflow: hidden;
+        height: 1em;
+        line-height: 1em;
+        font-weight: regular;
+        font-size: 10em;
+    }
+    
+</style>
 </head>
 
 <body>  
-    <div class="wrapper">
-        <span class="box third-number"></span>
-        <span class="box second-number"></span>
-        <span class="box first-number"></span>
-    </div>
+    
 
     <div class="wrapper">
 
@@ -22,11 +48,14 @@
         <div id="dice2" class="box">0</div>
 
     <br><br><br><br>
+
     <center>
         <button onclick="AniNum()">Start</button>
         <button onclick="stopNum()">Stop</button>
     </center>
+
     <br>
+
     <center>
     <button onclick="reset()">Reset</button>
     </center>
@@ -34,26 +63,56 @@
     </div>
 
 <script>
+    //var points=15;
+    
     function AniNum()
     {
-    MyVar=setInterval(rolldice,10)
+        MyVar=setInterval(rolldice,10);
     }
-
+    
     function rolldice()
     {
-    var ranNum = Math.floor( 1 + Math.random() * 6 );
-    var ranNum2 = Math.floor( 1 + Math.random() * 6 );
-    var ranNum3 = Math.floor( 1 + Math.random() * 6 );
-
-    document.getElementById("dice").innerHTML = ranNum;
-    document.getElementById("dice1").innerHTML = ranNum2;
-    document.getElementById("dice2").innerHTML = ranNum3;
+        var ranNum = Math.floor( 1 + Math.random() * 6 );
+        var ranNum2 = Math.floor( 1 + Math.random() * 6 );
+        var ranNum3 = Math.floor( 1 + Math.random() * 6 );
+        
+        document.getElementById("dice").innerHTML = ranNum;
+        document.getElementById("dice1").innerHTML = ranNum2;
+        document.getElementById("dice2").innerHTML = ranNum3;
     }
+    
     function stopNum()
-    {clearInterval(MyVar);}
+    {   var div, div1, div2;
+        
+        clearInterval(MyVar);
+        
+        div = Number(document.getElementById("dice").textContent);
+        div1 = Number(document.getElementById("dice1").textContent);
+        div2 = Number(document.getElementById("dice2").textContent);
+        
+        //Conditions to check the game
+        
+        
+        var points = 15;
+        if (div == div1 == div2){
+            points += 10;
+            alert("bonus"+ points);
+        } else if ((div%2 == 0) && (div1%2==0) && (div2%2==0)){
+            points += 5;
+            alert("Hurrey Plus 5 = "+ points);
+        } else if((div%2==1) && (div1%2==1) && (div2%2==1)){
+            points -= 5;
+            alert("OOPS Minus 5 = "+ points);
+        } else{
+            alert("No points =  "+ points);
+        }
+    }
 
     function reset()
-    {location.reload();}
+    {
+        location.reload();
+        alert("Your point is "+ points);
+    }
 </script>
 
 </body>
